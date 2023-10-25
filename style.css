@@ -1,0 +1,56 @@
+body {
+    padding: 25px;
+    background-color: #0fc;
+    font-family: sans-serif;
+    /*  */
+}
+
+img {
+    border-radius: 30%;
+    width: 300px;
+    /* Pour centrer un élément inline ou inlice-block : je mets un text-align: center;sur le parent de l'élément (img dans body -> le body est le parent de l'image */
+    /* pour centrer un élément block: je lui mets  */
+    /* pour centrer l'image qui est un inline-block: 1 je règle son dysplay pour en faire un block; 2 je lui mets des marges automarique de chaque côté */
+    display: block;
+    margin: auto;
+    /* Border-width: 10px;
+    border-color: red;
+    border-style: solid; */
+    border: 5px black solid;
+}
+h1 {
+    text-align: center;
+    font: inherit;
+    font-size: 75px;
+    font-family: "LifeCraft", sans-serif;
+    -webkit-text-stroke: #000000 3px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background: #000000;
+    background: linear-gradient(to bottom, #000000 30%, #00ff0d 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+H2 {
+    margin-top: 40px;
+    font-size: 30px;
+    font-family: "LifeCraft", sans-serif;
+}
+
+P {
+    margin: 20px;
+    font-size: 15px;
+    font-family: "MedievalSharp", cursive;
+    font-weight: bolder;
+}
+H3 {
+    margin-top: 35px;
+    font-size: 30px;
+    font-family: "LifeCraft", sans-serif;
+}
+ul {
+    margin: 20px;
+    font-size: 15px;
+    font-family: "MedievalSharp", cursive;
+    font-weight: bolder;
+}
