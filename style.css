@@ -40,7 +40,7 @@ H2 {
 P {
     margin: 20px;
     font-size: 15px;
-    font-family: "MedievalSharp", cursive;
+    font-family: inherit, sans-serif;
     font-weight: bolder;
 }
 H3 {
@@ -51,7 +51,7 @@ H3 {
 ul {
     margin: 20px;
     font-size: 15px;
-    font-family: "MedievalSharp", cursive;
+    font-family: inherit, sans-serif;
     font-weight: bolder;
 }
 /* aaaaa */
