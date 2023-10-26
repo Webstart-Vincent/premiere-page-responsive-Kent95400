@@ -54,4 +54,10 @@ ul {
     font-family: inherit, sans-serif;
     font-weight: bolder;
 }
-/* aaaaa */
+
+@media (min-width: 800px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 3fr 4fr;
+    }
+}
