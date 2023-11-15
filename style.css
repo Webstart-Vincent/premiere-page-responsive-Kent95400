@@ -7,7 +7,7 @@ body {
 
 img {
     border-radius: 30%;
-    width: 300px;
+    width: 500px;
     /* Pour centrer un élément inline ou inlice-block : je mets un text-align: center;sur le parent de l'élément (img dans body -> le body est le parent de l'image */
     /* pour centrer un élément block: je lui mets  */
     /* pour centrer l'image qui est un inline-block: 1 je règle son dysplay pour en faire un block; 2 je lui mets des marges automarique de chaque côté */
@@ -59,15 +59,24 @@ ul {
     .wrapper {
         display: grid;
         grid-template-columns: 3fr 4fr;
-        .h1 
-            text-align: left;
-        }
+
+        text-align: left;
+    }
+    h1 {
+        text-align: left;
+    }
+    img {
+        margin-right: 25px;
+        margin-left: 25px;
     }
 }
+
 /* sauvegarde grid */
 
 @media (min-width: 1024px) {
     .wrapper {
+        margin-left: auto;
+        margin-right: auto;
         gap: 20px;
         display: grid;
         grid-template-columns: 4fr 8fr;
