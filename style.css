@@ -7,7 +7,7 @@ body {
 
 img {
     border-radius: 30%;
-    width: 500px;
+    width: 350px;
     /* Pour centrer un élément inline ou inlice-block : je mets un text-align: center;sur le parent de l'élément (img dans body -> le body est le parent de l'image */
     /* pour centrer un élément block: je lui mets  */
     /* pour centrer l'image qui est un inline-block: 1 je règle son dysplay pour en faire un block; 2 je lui mets des marges automarique de chaque côté */
@@ -30,9 +30,11 @@ h1 {
     background: linear-gradient(to bottom, #000000 30%, #00ff0d 60%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin-left: 15px;
 }
 h2 {
     margin-top: 40px;
+    margin-left: 15px;
     font-size: 30px;
     font-family: "LifeCraft", sans-serif;
 }
@@ -87,5 +89,8 @@ ul {
     .content {
         display: grid;
         grid-template-columns: 4fr 4fr;
+    }
+    img {
+        margin: auto;
     }
 }
