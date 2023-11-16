@@ -48,7 +48,7 @@ p {
     font-weight: bolder;
 }
 h3 {
-    margin-top: 40px;
+    margin-top: 40 px;
     margin-left: 20px;
     font-size: 30px;
     font-family: "LifeCraft", sans-serif;
@@ -59,6 +59,17 @@ ul {
     font-size: 15px;
     font-family: inherit, sans-serif;
     font-weight: bolder;
+}
+nav {
+    background-color: rgb(255, 0, 0);
+    padding: 20px; /*utiliser le padding pour des page responsive sinon utliser le height*/
+    position: fixed;
+    inset: 0; /*équivalent de top:0;right:0;bottom:0;left:0;*/
+    display: grid;
+    align-content: center; /*aligne = vertical, justify = horizontal*/
+    justify-content: center;
+    gap: 25px; /* l'espace entre les elements*/
+    text-align: center; /* centrer les mots ou les éléments sur la meme ligne*/
 }
 
 @media (min-width: 800px) {
