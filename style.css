@@ -1,3 +1,7 @@
+:root {
+    --transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    /*primary-color: #bada55*/
+}
 body {
     padding: 25px;
     background-color: #0fc;
@@ -70,9 +74,52 @@ nav {
     justify-content: center;
     gap: 25px; /* l'espace entre les elements*/
     text-align: center; /* centrer les mots ou les éléments sur la meme ligne*/
+    transform: translateX(-100%);
+    /* on a deplacer la nav de 100% de qsa largeur sur l'axe de X ce qui veut dire qu'on a deplacer la nav sur la gauche*/
+    transition: var(--transition);
+    /* on utulise la variable creer au debut du HTML pou appliquer les parametres enregistrés*/
+}
+.cross + nav {
+    transform: none;
+}
+
+.burger {
+    position: fixed;
+    z-index: 1;
+    display: grid;
+    width: 40px;
+    gap: 8px;
+}
+.burger > span {
+    height: 4px;
+    background-color: #000;
+    border-radius: 2px;
+}
+
+.burger > span {
+    transition: var(--transition);
+    /* background-color: var(--primary-color); */
+    /* transition = le temps de changement
+    ease = acceleration
+    utuliser cubic-beziers pour personalisation la vitesse l'animation
+    DRY -> creer une variable fonction pour ne pas repeeter ou reecrire les memes codes
+    avant le body on a creer des variable reutilisable dans le code*/
+}
+.burger.cross > :nth-child(1) {
+    transform: translateY(12px) rotate(45deg);
+}
+.burger.cross > :nth-child(2) {
+    opacity: 0; /*transparance*/
+    transform: scaleX(0.1); /*scale horizontal*/
+}
+.burger.cross > :nth-child(3) {
+    transform: translateY(-12px) rotate(-45deg);
 }
 
 @media (min-width: 800px) {
+    .burger {
+        display: none;
+    }
     .wrapper {
         display: grid;
         grid-template-columns: 3fr 4fr;
@@ -91,6 +138,7 @@ nav {
         display: flex;
         bottom: auto;
         justify-content: end;
+        transform: none;
     }
 }
 
